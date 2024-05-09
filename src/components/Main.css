@@ -1,0 +1,92 @@
+.main {
+  background: #fff;
+  padding: 30px;
+  margin: 50px auto;
+  max-width: 540px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+}
+
+h1 {
+  text-align: center;
+}
+
+.form {
+  text-align: center;
+}
+
+form input[type="text"] {
+  display: block;
+  width: 250;
+  margin: 20px auto;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ccc;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+
+}
+
+form button {
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  background: #5f9982;
+  transition: .4s;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+  color: #ffffff;
+}
+
+form button:hover {
+  background: #a6bf91;
+  color: #000000;
+}
+
+.task-list {
+  margin-top: 30px;
+  list-style: none;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  transition: .4s;
+  font-size: 18px;
+}
+
+.task-list li span {
+  display: flex;
+  align-items: center;
+}
+
+.task-list li:hover {
+  background: #5f9982;
+  color: #ffffff;
+}
+
+.task-list li .edit {
+  color: #a6bf91;
+}
+
+.task-list li .delete {
+  color: #400428;
+}
+
+.task-list li .delete,
+.task-list li .edit {
+  margin-right: 15px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.task-list li:hover .edit,
+.task-list li:hover .delete{
+  color: #ffffff;
+}

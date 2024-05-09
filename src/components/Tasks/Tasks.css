@@ -1,0 +1,85 @@
+.task-list {
+  margin-top: 30px;
+  list-style: none;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  transition: .4s;
+  font-size: 18px;
+}
+
+.task-list li span {
+  display: flex;
+  align-items: center;
+}
+
+.task-list li:hover {
+  background: #5f9982;
+  color: #ffffff;
+}
+
+.task-list li .edit {
+  color: #a6bf91;
+}
+
+.task-list li .delete {
+  color: #400428;
+}
+
+.task-list li .delete,
+.task-list li .edit {
+  margin-right: 15px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.task-list li:hover .edit,
+.task-list li:hover .delete{
+  color: #ffffff;
+}.task-list {
+  margin-top: 30px;
+  list-style: none;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  transition: .4s;
+  font-size: 18px;
+}
+
+.task-list li span {
+  display: flex;
+  align-items: center;
+}
+
+.task-list li:hover {
+  background: #5f9982;
+  color: #ffffff;
+}
+
+.task-list li .edit {
+  color: #a6bf91;
+}
+
+.task-list li .delete {
+  color: #400428;
+}
+
+.task-list li .delete,
+.task-list li .edit {
+  margin-right: 15px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.task-list li:hover .edit,
+.task-list li:hover .delete{
+  color: #ffffff;
+}

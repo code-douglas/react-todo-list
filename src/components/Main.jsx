@@ -1,6 +1,8 @@
 import { Component } from "react";
-import { FaEdit, FaWindowClose } from "react-icons/fa";
 import './Main.css';
+import Form from './Form'
+import Tasks from './Tasks'
+
 
 class Main extends Component {
   state = {
@@ -81,26 +83,17 @@ class Main extends Component {
       <div className="main">
         <h1>To Do List</h1>
 
-        <form action="#" className="form" onSubmit={this.handleSubmit}>
-          <input 
-            onChange={this.handleChange} 
-            type="text" 
-            value={newTask}
-          />
-          <button type="submit">Create Task</button>
-        </form>
+        <Form 
+          handleSubmit={this.handleSubmit} 
+          handleChange={this.handleChange} 
+          newTask={newTask}
+        />
 
-        <ul className="task-list">
-          {tasks.map((task, index) => (
-            <li key={index}>
-              {task}
-              <span>
-                <FaEdit className="edit" onClick={() => this.handleEdit(index)} />
-                <FaWindowClose className="delete" onClick={() => this.handleDelete(index)} />
-              </span>
-            </li>
-          ))}
-        </ul>
+        <Tasks
+          tasks={tasks}
+          handleEdit={this.handleEdit}
+          handleDelete={this.handleDelete}
+        />
       </div>
     )
   }

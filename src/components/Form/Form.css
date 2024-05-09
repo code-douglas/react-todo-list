@@ -1,0 +1,35 @@
+.form {
+  text-align: center;
+}
+
+form input[type="text"] {
+  display: block;
+  width: 250;
+  margin: 20px auto;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ccc;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+
+}
+
+form button {
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  background: #5f9982;
+  transition: .4s;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+  color: #ffffff;
+}
+
+form button:hover {
+  background: #a6bf91;
+  color: #000000;
+}

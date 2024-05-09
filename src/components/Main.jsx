@@ -9,6 +9,23 @@ class Main extends Component {
     index: -1,
   };
 
+  componentDidUpdate (prevProps, prevState) {
+    const { tasks } = this.state
+
+    if(tasks === prevState.tasks) return;
+
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+
+  }
+
+  componentDidMount() {
+    const tasks = JSON.parse(localStorage.getItem('tasks'));
+
+    if(!tasks) return;
+
+    this.setState({tasks})
+  }
+
   handleChange = (event) => {
     this.setState({
       newTask: event.target.value
